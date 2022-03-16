@@ -1,0 +1,125 @@
+* {
+  margin: 0%;
+  padding: 0%;
+}
+
+.sky {
+  height: 100vh;
+  width: 100%;
+  background-image: url(./sky.jpg);
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  overflow: hidden;
+}
+.sun img {
+  position: absolute;
+  top: 60px;
+  width: 100px;
+  height: 100px;
+  right: 20px;
+  animation: sun 120s linear infinite;
+}
+.highway {
+  height: 200px;
+  width: 500%;
+  display: block;
+  background-image: url(./road.jpg);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  background-repeat: repeat-x;
+  animation: highway 5s linear infinite;
+}
+@keyframes highway {
+  100% {
+    transform: translateX(-1400px);
+  }
+}
+.city {
+  height: 250px;
+  width: 500%;
+  background-image: url(./city\ .png);
+  background-repeat: repeat-x;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 200px;
+  display: block;
+  z-index: 1;
+  animation: city 20s linear infinite;
+}
+.car img {
+  width: 400px;
+  animation: car 1s linear infinite;
+  position: absolute;
+  bottom: 50px;
+  left: 400px;
+  z-index: 3;
+}
+@keyframes car {
+  100% {
+    transform: translateY(-1px);
+  }
+  50% {
+    transform: translateY(1px);
+  }
+  0% {
+    transform: translateY(-1px);
+  }
+}
+.wheel img {
+  width: 70px;
+  height: 70px;
+  animation: wheel 1s linear infinite;
+  z-index: 3;
+}
+@keyframes wheel {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.front {
+  position: absolute;
+  bottom: 55px;
+  left: 435px;
+}
+.back {
+  position: absolute;
+  bottom: 55px;
+  left: 680px;
+}
+@keyframes city {
+  100% {
+    transform: translateX(-1400px);
+  }
+}
+.flag img {
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  bottom: 195px;
+  right: 650px;
+  z-index: 3;
+}
+.text {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 40%;
+  position: absolute;
+  right: 400px;
+  top: 40px;
+}
+.text1 {
+  background-color: orange;
+}
+.text3 {
+  background-color: green;
+}
+.text2 {
+  background-color: white;
+}

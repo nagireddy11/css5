@@ -1,0 +1,30 @@
+body {
+  background-color: yellow;
+}
+h1 {
+  width: 50%;
+  margin: auto;
+}
+ol {
+  width: 50%;
+  margin: auto;
+}
+li {
+  height: 100px;
+  width: 100px;
+  background-color: green;
+  margin: 10px;
+  transition: width 3s linear;
+}
+
+.first:hover {
+  width: 400px;
+
+  transform: scaleX(1.5);
+}
+.second:hover {
+  width: 400px;
+  height: 400px;
+
+  transform: scaleX(1.5);
+}

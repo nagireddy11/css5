@@ -1,0 +1,125 @@
+body {
+  background-color: yellow;
+}
+.head {
+  width: 40%;
+  margin: auto;
+}
+.shape {
+  width: 50%;
+  margin: auto;
+}
+.parent {
+  display: flex;
+}
+.grid {
+  height: 100px;
+  width: 100px;
+  background-color: aliceblue;
+  margin: 20px;
+  border: 3px solid black;
+}
+.one {
+  background-color: orangered;
+  animation-name: Row1;
+  animation-duration: 5s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+@keyframes Row1 {
+  0% {
+    transform: skewX(0deg);
+  }
+  25% {
+    transform: skewX(20deg);
+  }
+  75% {
+    transform: skewX(-20deg);
+  }
+  100% {
+    tranform: skewX(0deg);
+  }
+}
+.two {
+  background-color: gray;
+  animation-name: Row2;
+  animation-duration: 5s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+@keyframes Row2 {
+  0% {
+    transform: skewY(0deg);
+  }
+  25% {
+    transform: skewY(20deg);
+  }
+  75% {
+    transform: skewY(-20deg);
+  }
+  100% {
+    tranform: skewY(0deg);
+  }
+}
+.three {
+  background-color: orange;
+  animation-name: Row3;
+  animation-duration: 5s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+@keyframes Row3 {
+  0% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(180deg);
+  }
+  75% {
+    transform: rotate(270deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.four {
+  background-color: blue;
+  animation-name: Row4;
+  animation-duration: 5s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+}
+@keyframes Row4 {
+  0% {
+    transform: scaleY(0.5);
+  }
+}
+.five {
+  background-color: red;
+  animation-name: Row4-1;
+  animation-duration: 5s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+}
+@keyframes Row4-1 {
+  0% {
+    transform: scaleX(0.5);
+  }
+}
+.six {
+  background-color: green;
+  animation-name: Row4-2;
+  animation-duration: 5s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+}
+@keyframes Row4-2 {
+  0% {
+    transform: rotate(100deg);
+  }
+}
+h1 {
+  width: 50%;
+  margin: auto;
+  font-weight: 100;
+}
